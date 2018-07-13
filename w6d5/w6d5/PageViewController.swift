@@ -13,7 +13,9 @@ extension PageViewController {
     super.viewDidLoad()
     
     // Get onboarding view controllers from storyboard
-    guard let onboardingScreen1 = storyboard?.instantiateViewController(withIdentifier: "OnboardingScreen1"), let onboardingScreen2 = storyboard?.instantiateViewController(withIdentifier: "OnboardingScreen2"), let onboardingScreen3 = storyboard?.instantiateViewController(withIdentifier: "OnboardingScreen3") else {
+    guard let onboardingScreen1 = storyboard?.instantiateViewController(withIdentifier: "OnboardingScreen1"),
+      let onboardingScreen2 = storyboard?.instantiateViewController(withIdentifier: "OnboardingScreen2"),
+      let onboardingScreen3 = storyboard?.instantiateViewController(withIdentifier: "OnboardingScreen3") else {
       assertionFailure("Unable to instantiate onboarding screens from storyboard.")
       return
     }

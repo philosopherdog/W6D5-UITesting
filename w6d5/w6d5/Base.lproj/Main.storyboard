@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="udR-HG-YPB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zDl-0p-W7P">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,111 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Page View Controller-->
-        <scene sceneID="NR9-PE-zJU">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="udR-HG-YPB" customClass="PageViewController" customModule="w6d5" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9SO-Nw-4pX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137" y="827"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="XH2-fw-1If">
-            <objects>
-                <viewController storyboardIdentifier="OnboardingScreen1" id="Q3P-d2-88z" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1LT-gg-vkB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding Screen 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3c-bV-htU">
-                                <rect key="frame" x="107" y="323" width="160.5" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="onboardingScreen1" label="Onboarding Screen 1"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="C3c-bV-htU" firstAttribute="centerX" secondItem="1LT-gg-vkB" secondAttribute="centerX" id="Ebr-DE-fjk"/>
-                            <constraint firstItem="C3c-bV-htU" firstAttribute="centerY" secondItem="1LT-gg-vkB" secondAttribute="centerY" id="UDb-wb-q4r"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gJg-gS-Lei"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bvk-16-MVt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-514" y="1564"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mso-bd-Tar">
-            <objects>
-                <viewController storyboardIdentifier="OnboardingScreen2" id="z9C-Ap-N3L" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u0D-Jc-Rg9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding Screen 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxS-kl-xyd">
-                                <rect key="frame" x="106" y="323" width="162.5" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="onboardingScreen2" label="Onboarding Screen 2"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="gxS-kl-xyd" firstAttribute="centerX" secondItem="u0D-Jc-Rg9" secondAttribute="centerX" id="KtH-QR-5iu"/>
-                            <constraint firstItem="gxS-kl-xyd" firstAttribute="centerY" secondItem="u0D-Jc-Rg9" secondAttribute="centerY" id="Q62-jG-2G7"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="n4M-eu-tEO"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FAl-sd-Mmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137" y="1564"/>
-        </scene>
-        <!--Onboarding Screen View Controller-->
-        <scene sceneID="Gu9-US-i2b">
-            <objects>
-                <viewController storyboardIdentifier="OnboardingScreen3" id="LW5-Eb-XcS" customClass="OnboardingScreenViewController" customModule="w6d5" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9cY-AZ-2CC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding Screen 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSn-x8-s2w">
-                                <rect key="frame" x="105.5" y="323" width="163" height="21"/>
-                                <accessibility key="accessibilityConfiguration" identifier="onboardingScreen3" label="Onboarding Screen 3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-sM-0W8" userLabel="dismissButton">
-                                <rect key="frame" x="160" y="557" width="54" height="30"/>
-                                <accessibility key="accessibilityConfiguration" hint="Tap this button to dismiss the onboarding screens and go to the Main screen" identifier="dismissButton" label="Dismiss"/>
-                                <state key="normal" title="Dismiss"/>
-                                <connections>
-                                    <action selector="dismissButtonTapped:" destination="LW5-Eb-XcS" eventType="touchUpInside" id="gPs-Zu-7mQ"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="hSn-x8-s2w" firstAttribute="centerX" secondItem="9cY-AZ-2CC" secondAttribute="centerX" id="GFV-3P-Oje"/>
-                            <constraint firstItem="bJa-sM-0W8" firstAttribute="centerX" secondItem="9cY-AZ-2CC" secondAttribute="centerX" id="GH5-GM-uOE"/>
-                            <constraint firstItem="hSn-x8-s2w" firstAttribute="centerY" secondItem="9cY-AZ-2CC" secondAttribute="centerY" id="fAO-pX-w6J"/>
-                            <constraint firstItem="CSZ-SM-tmS" firstAttribute="bottom" secondItem="bJa-sM-0W8" secondAttribute="bottom" constant="80" id="uld-Fs-Vvs"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="CSZ-SM-tmS"/>
-                    </view>
-                    <connections>
-                        <segue destination="zDl-0p-W7P" kind="show" identifier="segueMainScreen" id="aBr-qZ-Dtq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7ob-dK-Rfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="790" y="1564"/>
-        </scene>
         <!--My App-->
         <scene sceneID="tIL-g6-Cnd">
             <objects>

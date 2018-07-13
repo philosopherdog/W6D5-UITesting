@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lNr-J5-w7v">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITestExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="rdS-WR-0gk">
+                                <rect key="frame" x="20" y="120" width="335" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E77-Q4-lAU">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="textField1" label="Enter Text Here"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="W2y-sK-d5s">
+                                        <rect key="frame" x="0.0" y="30" width="335" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-le-u0M">
+                                                <rect key="frame" x="0.0" y="0.0" width="59" height="100"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button1"/>
+                                                <state key="normal" title="Click Me"/>
+                                                <connections>
+                                                    <action selector="buttonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="ek4-Qv-gFn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-AD-fOs">
+                                                <rect key="frame" x="292" y="0.0" width="43" height="100"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="button2"/>
+                                                <state key="normal" title="Result"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="21G-He-ax7"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94246441130000003" green="0.83959698679999994" blue="0.35277429220000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="rdS-WR-0gk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="5aa-Wq-aCx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rdS-WR-0gk" secondAttribute="trailing" constant="20" id="cOO-gE-GJM"/>
+                            <constraint firstItem="rdS-WR-0gk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="khu-Uk-ww0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultButton" destination="fr4-AD-fOs" id="Xuc-RS-Ifp"/>
+                        <outlet property="textField" destination="E77-Q4-lAU" id="cPW-vQ-LPW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-182" y="34"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="6oy-6R-2aI">
+            <objects>
+                <tableViewController id="jaC-lt-ObL" customClass="TableViewController" customModule="UITestExamples" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eVU-rH-4x0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="86" id="MOa-Y8-VuE" customClass="TableViewCell" customModule="UITestExamples" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MOa-Y8-VuE" id="yrE-hI-2dA">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9Y-qT-iwC">
+                                            <rect key="frame" x="16" y="19" width="343" height="46"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="label1"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="D9Y-qT-iwC" firstAttribute="trailing" secondItem="yrE-hI-2dA" secondAttribute="trailingMargin" id="E7X-1P-2sf"/>
+                                        <constraint firstItem="D9Y-qT-iwC" firstAttribute="centerY" secondItem="yrE-hI-2dA" secondAttribute="centerY" id="IBj-rN-U7c"/>
+                                        <constraint firstItem="D9Y-qT-iwC" firstAttribute="leading" secondItem="yrE-hI-2dA" secondAttribute="leadingMargin" id="cCV-p1-59U"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="Cell">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="label" destination="D9Y-qT-iwC" id="BgT-0c-PCc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jaC-lt-ObL" id="HJG-e5-dJ5"/>
+                            <outlet property="delegate" destination="jaC-lt-ObL" id="Im3-g7-89r"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iqh-aA-kRr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMD-1g-iyN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536.79999999999995" y="682.3088455772114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TlM-es-v83">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lNr-J5-w7v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nCO-N7-TD0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jaC-lt-ObL" kind="relationship" relationship="rootViewController" id="EFF-IJ-EWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BeI-2l-lv0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.19999999999999" y="689.5052473763119"/>
+        </scene>
+    </scenes>
+</document>
